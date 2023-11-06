@@ -1,0 +1,73 @@
+Start downloading data
+WARNING: timestamping does nothing in combination with -O. See the manual
+for details.
+
+--2023-10-31 01:12:53--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2020&Month=2&Day=14&timeframe=1&submit=%20Download+Data
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/ubuntu/Miniproject/week1/input/2020.csv’
+
+     0K .......... .......... .......... .......... ..........  743K
+    50K .......... .......... .......... .......... .......... 1.45M
+   100K .......... .......... .......                           852K=0.1s
+
+2023-10-31 01:12:55 (957 KB/s) - ‘/home/ubuntu/Miniproject/week1/input/2020.csv’ saved [130712]
+
+WARNING: timestamping does nothing in combination with -O. See the manual
+for details.
+
+--2023-10-31 01:12:55--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2021&Month=2&Day=14&timeframe=1&submit=%20Download+Data
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/ubuntu/Miniproject/week1/input/2021.csv’
+
+     0K .......... .......... .......... .......... ..........  742K
+    50K .......... .......... .......... .......... ..........  743K
+   100K .......... .......... ...                               149M=0.1s
+
+2023-10-31 01:12:57 (918 KB/s) - ‘/home/ubuntu/Miniproject/week1/input/2021.csv’ saved [126714]
+
+WARNING: timestamping does nothing in combination with -O. See the manual
+for details.
+
+--2023-10-31 01:12:57--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2022&Month=2&Day=14&timeframe=1&submit=%20Download+Data
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/ubuntu/Miniproject/week1/input/2022.csv’
+
+     0K .......... .......... .......... .......... ..........  536K
+    50K .......... .......... .......... .......... ..........  796K
+   100K .......... .......... ...                              89.0M=0.2s
+
+2023-10-31 01:12:58 (791 KB/s) - ‘/home/ubuntu/Miniproject/week1/input/2022.csv’ saved [126636]
+
+WARNING: timestamping does nothing in combination with -O. See the manual
+for details.
+
+--2023-10-31 01:12:58--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2023&Month=2&Day=14&timeframe=1&submit=%20Download+Data
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/ubuntu/Miniproject/week1/input/2023.csv’
+
+     0K .......... .......... .......... .......... ..........  418K
+    50K .......... .......... .......... .......... .......... 1.44M
+   100K .......... .......... ..                               28.4M=0.2s
+
+2023-10-31 01:13:01 (796 KB/s) - ‘/home/ubuntu/Miniproject/week1/input/2023.csv’ saved [125932]
+
+downloading individual files succeeded
+start running python script to concatenate the individual files to one
+Traceback (most recent call last):
+  File "/home/ubuntu/Miniproject/week1/scripts/Toronto_climate.py", line 13, in <module>
+    list.append(df)
+TypeError: descriptor 'append' for 'list' objects doesn't apply to a 'DataFrame' object
+PYTHON RUNNING FAILED
+[ERROR:] RETURN CODE:  1
